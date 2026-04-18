@@ -1,0 +1,39 @@
+#include <stdio.h>
+void main (){
+	int size,a,len1=0,len2=0;
+	printf("enter size of array : ");
+	scanf("%d",&size);
+	int arr1[size];
+	printf("enter elements of arr1 : \n");
+	for(a=0;a<size;a++){
+		scanf("%d",&arr1[a]);
+		len1++;
+	}
+
+	int size1;
+	printf("enter size of array 2: ");
+	scanf("%d",&size1);
+	int arr2[size1];
+	printf("enter elements of arr2 : \n");
+	for(a=0;a<size1;a++){
+		scanf("%d",&arr2[a]);
+		len2++;
+	}
+	printf("length of arr1 is %d\n",len1);
+	printf("length of arr2 is %d\n",len2);
+	if(len1==len2){
+
+		printf("length of array is same ");
+
+	}else{
+		printf("length of array is different ");
+	}
+
+
+
+
+
+
+
+
+}
