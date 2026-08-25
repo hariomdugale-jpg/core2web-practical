@@ -5,16 +5,7 @@ void main (){
 	int row ;
 	printf("Enter no. of rows : ");
 	scanf("%d",&row);
-	int temp;
-	if(row % 2 == 1){
 
-		temp = row * ((row + 1)/2) +64 ;
-
-	}else{
-
-		temp = row * ((row + 1)/2) + 64 + ((row + 1)/2);
-
-	}
 
 	for(int i = 1 ; i <= row ; i++){
 
@@ -25,7 +16,22 @@ void main (){
 
 		for(int j = 0; j < i ; j++){
 
-			printf("%c\t",temp--);
+			if(i%4==0){
+
+				printf("%c\t",65 + j);
+
+
+			}else if(i%2==0){
+
+				printf("%c\t",64+i-j);
+
+
+			}else{
+
+
+				printf("%d\t",i - j);
+
+			}
 
 		}
 
